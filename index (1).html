@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Download Site</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- GoatCounter: 無料のアクセスカウンター -->
+    <script data-goatcounter="https://your-site.goatcounter.com/count"
+            async src="//gc.zgo.at/count.js"></script>
+</head>
+<body>
+    <header>
+        <h1>📦 My Download Site</h1>
+        <p>uploader.jpから移行しました</p>
+    </header>
+
+    <main>
+        <!-- 検索ボックス -->
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="ファイル名やカテゴリで検索...">
+            <select id="categoryFilter">
+                <option value="all">すべてのカテゴリ</option>
+            </select>
+        </div>
+
+        <!-- ファイル一覧 -->
+        <div id="fileList" class="file-list"></div>
+
+        <!-- 結果がない時 -->
+        <div id="noResults" class="no-results" style="display:none;">
+            該当するファイルが見つかりませんでした
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 My Download Site</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
